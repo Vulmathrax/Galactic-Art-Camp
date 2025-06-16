@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register for Galactic Art Camp</title>
+  <style>
+    body {
+      background: #0d0f2d url("Starmap.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Verdana', sans-serif;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;}
+
+    main {
+      max-width: 700px;
+      margin: 50px auto;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #4dd0e1;}
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #4dd0e1;
+      margin-bottom: 20px;}
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;}
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;}
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="file"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1em;}
+
+    textarea {
+      resize: vertical;}
+
+    fieldset {
+      border: 1px solid #4dd0e1;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;}
+
+    legend {
+      font-size: 1.2em;
+      color: #ffcc80;}
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;}
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 12px 24px;
+      background-color: #4dd0e1;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      color: #000;
+      cursor: pointer;
+      transition: background-color 0.3s ease;}
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #00bcd4;}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Galactic Art Camp Registration</h1>
+    <form action="#" method="post">
+
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" required>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" required>
+
+      <label for="about">Tell us about your child's art interests:</label>
+      <textarea id="about" name="about" rows="4" placeholder="My child loves drawing nebulas..." required></textarea>
+
+      <label for="email">Parent Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <fieldset>
+        <legend>T-Shirt Size</legend>
+        <label><input type="radio" name="size" value="small" checked> Small</label>
+        <label><input type="radio" name="size" value="medium"> Medium</label>
+        <label><input type="radio" name="size" value="large"> Large</label>
+        <label><input type="radio" name="size" value="xl"> Extra Large</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select Interests</legend>
+        <label><input type="checkbox" name="interest" value="space-painting"> Space Painting</label>
+        <label><input type="checkbox" name="interest" value="clay-modeling"> Clay Modeling</label>
+        <label><input type="checkbox" name="interest" value="galaxy-collage"> Galaxy Collage</label>
+      </fieldset>
+
+      <label for="age">Camper's Age:</label>
+      <select id="age" name="age">
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+
+      <label for="photo">Upload a Photo:</label>
+      <input type="file" id="photo" name="photo">
+
+      <label for="date">Date of Registration:</label>
+      <input type="date" id="date" name="date">
+
+      <div class="buttons">
+        <input type="submit" value="Register Now">
+        <input type="reset" value="Cancel">
+      </div>
+    </form>
+  </main>
+</body>
+</html>
